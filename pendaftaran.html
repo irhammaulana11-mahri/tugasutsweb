@@ -1,0 +1,365 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulir Pendaftaran Siswa – BimbelCerdas</title>
+  <meta name="description" content="Daftarkan dirimu di BimbelCerdas. Isi formulir pendaftaran siswa baru untuk program kursus pilihan. Proses mudah dan cepat!">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <a href="#konten-utama" class="skip-link">Lewati ke konten utama</a>
+
+  <header>
+    <div class="container">
+      <nav class="nav-inner" aria-label="Navigasi utama">
+        <a href="index.html" class="nav-logo" aria-label="BimbelCerdas – Halaman beranda">
+          BimbelCerdas
+        </a>
+        <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Buka menu navigasi"
+          onclick="this.setAttribute('aria-expanded', this.getAttribute('aria-expanded')==='true' ? 'false' : 'true'); document.getElementById('nav-menu').classList.toggle('is-open')">
+          ☰
+        </button>
+        <ul class="nav-links" id="nav-menu" role="list">
+          <li><a href="index.html">Beranda</a></li>
+          <li><a href="katalog.html">Program</a></li>
+          <li><a href="pendaftaran.html" class="nav-cta" aria-current="page">Daftar Sekarang</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+
+  <main id="konten-utama">
+
+    <div class="form-page-hero" aria-label="Header halaman pendaftaran">
+      <div class="container">
+        <h1>Formulir Pendaftaran Siswa</h1>
+        <p>Isi data dengan lengkap dan benar. Kami akan menghubungi kamu dalam 1×24 jam.</p>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="form-layout">
+
+        <section aria-labelledby="form-heading">
+          <div class="form-container">
+            <h2 class="form-title" id="form-heading">Data Pendaftaran</h2>
+            <p class="form-subtitle">Bidang bertanda <span style="color:#dc2626">*</span> wajib diisi.</p>
+
+            <form
+              method="get"
+              action="terima-kasih.html"
+              novalidate
+              aria-label="Formulir pendaftaran siswa BimbelCerdas"
+            >
+
+              <h3 class="form-section-title">👤 Data Pribadi Siswa</h3>
+
+              <div class="form-group">
+                <label for="nama-lengkap">
+                  Nama Lengkap Siswa <span class="required" aria-hidden="true">*</span>
+                </label>
+                <input
+                  type="text"
+                  id="nama-lengkap"
+                  name="nama_lengkap"
+                  required
+                  minlength="3"
+                  maxlength="100"
+                  placeholder="Nama sesuai akta lahir / ijazah"
+                  autocomplete="name"
+                  aria-required="true"
+                  aria-describedby="nama-hint"
+                >
+                <p id="nama-hint" class="hint-text">Minimal 3 karakter, sesuai dokumen resmi.</p>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="tanggal-lahir">
+                    Tanggal Lahir <span class="required" aria-hidden="true">*</span>
+                  </label>
+                  <input
+                    type="date"
+                    id="tanggal-lahir"
+                    name="tanggal_lahir"
+                    required
+                    min="2000-01-01"
+                    max="2020-12-31"
+                    autocomplete="bday"
+                    aria-required="true"
+                    aria-describedby="tgl-hint"
+                  >
+                  <p id="tgl-hint" class="hint-text">Usia 6–26 tahun.</p>
+                </div>
+
+                <div class="form-group">
+                  <label for="jenis-kelamin">
+                    Jenis Kelamin <span class="required" aria-hidden="true">*</span>
+                  </label>
+                  <select
+                    id="jenis-kelamin"
+                    name="jenis_kelamin"
+                    required
+                    autocomplete="sex"
+                    aria-required="true"
+                  >
+                    <option value="" disabled selected>-- Pilih --</option>
+                    <option value="laki-laki">Laki-laki</option>
+                    <option value="perempuan">Perempuan</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="no-hp">
+                    Nomor HP Siswa / Orang Tua <span class="required" aria-hidden="true">*</span>
+                  </label>
+                  <input
+                    type="tel"
+                    id="no-hp"
+                    name="no_hp"
+                    required
+                    pattern="^(\+62|62|0)[0-9]{8,13}$"
+                    placeholder="Contoh: 08123456789"
+                    inputmode="tel"
+                    autocomplete="tel"
+                    aria-required="true"
+                    aria-describedby="hp-hint"
+                  >
+                  <p id="hp-hint" class="hint-text">Format: 08xx atau +62xx (8–13 digit).</p>
+                </div>
+
+                <div class="form-group">
+                  <label for="email">
+                    Email <span class="required" aria-hidden="true">*</span>
+                  </label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    required
+                    placeholder="namasiswa@email.com"
+                    inputmode="email"
+                    autocomplete="email"
+                    aria-required="true"
+                    aria-describedby="email-hint"
+                  >
+                  <p id="email-hint" class="hint-text">Email aktif untuk pengiriman konfirmasi pendaftaran.</p>
+                </div>
+              </div>
+
+              <h3 class="form-section-title" style="margin-top:var(--space-xl);">🎓 Jenjang & Program</h3>
+
+              <div class="form-group">
+                <fieldset aria-required="true">
+                  <legend>Jenjang Pendidikan Saat Ini <span class="required" aria-hidden="true">*</span></legend>
+                  <div class="radio-group" role="radiogroup">
+                    <label class="radio-label">
+                      <input type="radio" name="jenjang" value="sd" required>
+                      Sekolah Dasar (SD)
+                    </label>
+                    <label class="radio-label">
+                      <input type="radio" name="jenjang" value="smp">
+                      Sekolah Menengah Pertama (SMP)
+                    </label>
+                    <label class="radio-label">
+                      <input type="radio" name="jenjang" value="sma">
+                      Sekolah Menengah Atas (SMA / SMK)
+                    </label>
+                    <label class="radio-label">
+                      <input type="radio" name="jenjang" value="alumni">
+                      Alumni / Umum
+                    </label>
+                  </div>
+                </fieldset>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="kelas">
+                    Kelas <span class="required" aria-hidden="true">*</span>
+                  </label>
+                  <input
+                    type="number"
+                    id="kelas"
+                    name="kelas"
+                    required
+                    min="1"
+                    max="12"
+                    placeholder="Contoh: 9"
+                    inputmode="numeric"
+                    aria-required="true"
+                    aria-describedby="kelas-hint"
+                  >
+                  <p id="kelas-hint" class="hint-text">Isi 1–6 untuk SD, 7–9 untuk SMP, 10–12 untuk SMA.</p>
+                </div>
+
+                <div class="form-group">
+                  <label for="nama-sekolah">
+                    Nama Sekolah
+                  </label>
+                  <input
+                    type="text"
+                    id="nama-sekolah"
+                    name="nama_sekolah"
+                    placeholder="Contoh: SMP Negeri 5 Surabaya"
+                    autocomplete="organization"
+                  >
+                </div>
+              </div>
+
+              <div class="form-group">
+                <fieldset aria-required="true" aria-describedby="program-hint">
+                  <legend>Program yang Diminati <span class="required" aria-hidden="true">*</span></legend>
+                  <div class="checkbox-group">
+                    <label class="checkbox-label">
+                      <input type="checkbox" name="program[]" value="matematika">
+                      Matematika (Rp 350.000 / bln)
+                    </label>
+                    <label class="checkbox-label">
+                      <input type="checkbox" name="program[]" value="bahasa-inggris">
+                      Bahasa Inggris (Rp 400.000 / bln)
+                    </label>
+                    <label class="checkbox-label">
+                      <input type="checkbox" name="program[]" value="ipa">
+                      IPA / Sains (Rp 450.000 / bln)
+                    </label>
+                    <label class="checkbox-label">
+                      <input type="checkbox" name="program[]" value="coding">
+                      Pemrograman (Rp 500.000 / bln)
+                    </label>
+                    <label class="checkbox-label">
+                      <input type="checkbox" name="program[]" value="b-indonesia">
+                      Bahasa Indonesia (Rp 300.000 / bln)
+                    </label>
+                    <label class="checkbox-label">
+                      <input type="checkbox" name="program[]" value="utbk">
+                      Persiapan UTBK / SNBT (Rp 750.000 / bln)
+                    </label>
+                  </div>
+                </fieldset>
+                <p id="program-hint" class="hint-text">Boleh memilih lebih dari satu program. Pilih min. 1 program.</p>
+              </div>
+
+              <h3 class="form-section-title" style="margin-top:var(--space-xl);">📅 Preferensi Jadwal</h3>
+
+              <div class="form-group">
+                <label for="preferensi-hari">
+                  Preferensi Hari Belajar
+                </label>
+                <select
+                  id="preferensi-hari"
+                  name="preferensi_hari"
+                  autocomplete="off"
+                >
+                  <option value="" disabled selected>-- Pilih hari yang disukai --</option>
+                  <option value="senin-rabu-jumat">Senin, Rabu, Jumat</option>
+                  <option value="selasa-kamis-sabtu">Selasa, Kamis, Sabtu</option>
+                  <option value="sabtu-minggu">Sabtu & Minggu saja</option>
+                  <option value="fleksibel">Fleksibel (bisa diatur)</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="catatan">
+                  Catatan atau Kebutuhan Khusus
+                </label>
+                <textarea
+                  id="catatan"
+                  name="catatan"
+                  rows="4"
+                  placeholder="Tuliskan kebutuhan belajar khusus, materi yang ingin difokuskan, atau pertanyaan lainnya..."
+                  aria-describedby="catatan-hint"
+                ></textarea>
+                <p id="catatan-hint" class="hint-text">Opsional. Bantu kami memahami kebutuhanmu dengan lebih baik.</p>
+              </div>
+
+              <div class="form-group" style="margin-top:var(--space-lg);">
+                <fieldset>
+                  <legend>Persetujuan</legend>
+                  <div class="checkbox-group">
+                    <label class="checkbox-label">
+                      <input
+                        type="checkbox"
+                        name="setuju_syarat"
+                        value="ya"
+                        required
+                        aria-required="true"
+                        aria-describedby="syarat-hint"
+                      >
+                      Saya menyetujui <a href="#" style="color:var(--color-primary);">syarat dan ketentuan</a> pendaftaran BimbelCerdas. <span class="required" aria-hidden="true">*</span>
+                    </label>
+                    <p id="syarat-hint" class="hint-text">Wajib dicentang untuk melanjutkan pendaftaran.</p>
+                    <label class="checkbox-label">
+                      <input type="checkbox" name="newsletter" value="ya">
+                      Saya bersedia menerima informasi tryout, promo, dan jadwal belajar via WhatsApp/Email.
+                    </label>
+                  </div>
+                </fieldset>
+              </div>
+
+              <div class="form-actions">
+                <button type="submit" class="btn btn-primary form-submit">
+                  🚀 Kirim Pendaftaran
+                </button>
+                <button type="reset" class="btn btn-outline">
+                  Ulangi
+                </button>
+              </div>
+
+            </form>
+          </div>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <strong>📚 BimbelCerdas</strong>
+          <p>Lembaga bimbingan belajar terpercaya sejak 2018. Kami berkomitmen mencetak generasi cerdas dan berkarakter.</p>
+        </div>
+        <nav class="footer-col" aria-label="Navigasi program">
+          <h4>Program</h4>
+          <ul>
+            <li><a href="katalog.html#matematika">Matematika</a></li>
+            <li><a href="katalog.html#bahasa-inggris">Bahasa Inggris</a></li>
+            <li><a href="katalog.html#ipa">IPA / Sains</a></li>
+            <li><a href="katalog.html#utbk">Persiapan UTBK</a></li>
+          </ul>
+        </nav>
+        <nav class="footer-col" aria-label="Navigasi halaman">
+          <h4>Navigasi</h4>
+          <ul>
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="katalog.html">Program & Harga</a></li>
+            <li><a href="pendaftaran.html">Pendaftaran</a></li>
+          </ul>
+        </nav>
+        <div class="footer-col">
+          <h4>Kontak</h4>
+          <ul>
+            <li><a href="tel:+6281234567890">📞 0812-3456-7890</a></li>
+            <li><a href="mailto:info@bimbelcerdas.id">✉️ info@bimbelcerdas.id</a></li>
+            <li><span>📍 Jl. Pendidikan No. 12, Surabaya</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 BimbelCerdas. Dibuat untuk UTS Pemrograman Antarmuka Web – Teknik Informatika ITATS.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

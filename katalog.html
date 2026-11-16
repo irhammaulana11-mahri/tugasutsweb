@@ -1,0 +1,456 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Program & Harga – BimbelCerdas</title>
+  <meta name="description" content="Lihat lengkap program kursus BimbelCerdas: Matematika, Bahasa Inggris, IPA, Coding, dan persiapan UTBK. Harga transparan, kualitas terjamin.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <a href="#konten-utama" class="skip-link">Lewati ke konten utama</a>
+
+  <header>
+    <div class="container">
+      <nav class="nav-inner" aria-label="Navigasi utama">
+        <a href="index.html" class="nav-logo" aria-label="BimbelCerdas – Halaman beranda">
+          BimbelCerdas
+        </a>
+        <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Buka menu navigasi"
+          onclick="this.setAttribute('aria-expanded', this.getAttribute('aria-expanded')==='true' ? 'false' : 'true'); document.getElementById('nav-menu').classList.toggle('is-open')">
+          ☰
+        </button>
+        <ul class="nav-links" id="nav-menu" role="list">
+          <li><a href="index.html">Beranda</a></li>
+          <li><a href="katalog.html" aria-current="page">Program</a></li>
+          <li><a href="pendaftaran.html" class="nav-cta">Daftar Sekarang</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="konten-utama">
+
+    <section class="catalog-intro" aria-labelledby="katalog-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Katalog Lengkap</span>
+          <h1 id="katalog-heading">Program & Layanan Kami</h1>
+          <p>Pilih program yang sesuai dengan jenjang dan kebutuhanmu. Semua program diampu oleh tenaga pengajar bersertifikat.</p>
+        </div>
+      </div>
+    </section>
+
+    <section aria-labelledby="program-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Program Tersedia</span>
+          <h2 id="program-heading">Pilihan Program Belajar</h2>
+        </div>
+
+        <div class="programs-grid">
+
+          <article class="program-card" id="matematika">
+            <div class="program-card-header">
+              <div class="program-icon" aria-hidden="true">📐</div>
+              <div>
+                <h3>Matematika</h3>
+                <p class="program-level">SD · SMP · SMA</p>
+              </div>
+            </div>
+            <div class="program-card-body">
+              <p class="program-desc">Program matematika komprehensif dari dasar hingga tingkat lanjut. Cocok untuk persiapan ulangan harian, PTS, PAS, hingga UTBK.</p>
+              <ul class="program-features">
+                <li>Aljabar, geometri, statistika, kalkulus</li>
+                <li>Latihan soal dari tahun ke tahun</li>
+                <li>Sesi tryout bulanan</li>
+                <li>Modul belajar eksklusif</li>
+                <li>Kelas maks. 10 siswa</li>
+              </ul>
+            </div>
+            <div class="program-card-footer">
+              <div class="program-price">Rp 350.000 <span>/ bulan</span></div>
+              <a href="pendaftaran.html?program=matematika" class="btn btn-primary">Daftar</a>
+            </div>
+          </article>
+
+          <article class="program-card" id="bahasa-inggris">
+            <div class="program-card-header">
+              <div class="program-icon" aria-hidden="true">🌐</div>
+              <div>
+                <h3>Bahasa Inggris</h3>
+                <p class="program-level">SD · SMP · SMA · Umum</p>
+              </div>
+            </div>
+            <div class="program-card-body">
+              <p class="program-desc">Tingkatkan kemampuan 4 skill: speaking, listening, reading, dan writing. Persiapan TOEFL/IELTS tersedia untuk level lanjut.</p>
+              <ul class="program-features">
+                <li>Grammar & vocabulary intensif</li>
+                <li>Percakapan dengan native-like approach</li>
+                <li>Persiapan TOEFL/IELTS/Cambridge</li>
+                <li>Simulasi ujian mingguan</li>
+                <li>Media pembelajaran audio-visual</li>
+              </ul>
+            </div>
+            <div class="program-card-footer">
+              <div class="program-price">Rp 400.000 <span>/ bulan</span></div>
+              <a href="pendaftaran.html?program=bahasa-inggris" class="btn btn-primary">Daftar</a>
+            </div>
+          </article>
+
+          <article class="program-card" id="ipa">
+            <div class="program-card-header">
+              <div class="program-icon" aria-hidden="true">⚗️</div>
+              <div>
+                <h3>IPA / Sains</h3>
+                <p class="program-level">SMP · SMA</p>
+              </div>
+            </div>
+            <div class="program-card-body">
+              <p class="program-desc">Fisika, Kimia, dan Biologi dalam satu paket terpadu. Pendekatan konsep-to-soal memastikan pemahaman mendalam dan nilai tinggi.</p>
+              <ul class="program-features">
+                <li>Fisika: mekanika, listrik, optik, gelombang</li>
+                <li>Kimia: reaksi, stoikiometri, organik</li>
+                <li>Biologi: sel, genetika, ekologi</li>
+                <li>Mini-eksperimen konseptual</li>
+                <li>Bank soal OSN & UTBK</li>
+              </ul>
+            </div>
+            <div class="program-card-footer">
+              <div class="program-price">Rp 450.000 <span>/ bulan</span></div>
+              <a href="pendaftaran.html?program=ipa" class="btn btn-primary">Daftar</a>
+            </div>
+          </article>
+
+          <article class="program-card" id="coding">
+            <div class="program-card-header">
+              <div class="program-icon" aria-hidden="true">💻</div>
+              <div>
+                <h3>Pemrograman</h3>
+                <p class="program-level">SD · SMP · SMA</p>
+              </div>
+            </div>
+            <div class="program-card-body">
+              <p class="program-desc">Kelas coding seru berbasis proyek. Dari Scratch untuk anak-anak hingga Python dan HTML/CSS untuk remaja. Siap era digital!</p>
+              <ul class="program-features">
+                <li>Scratch (usia 8–12 tahun)</li>
+                <li>Python dasar & menengah</li>
+                <li>HTML, CSS, Bootstrap dasar</li>
+                <li>Proyek nyata setiap bulan</li>
+                <li>Sertifikat penyelesaian program</li>
+              </ul>
+            </div>
+            <div class="program-card-footer">
+              <div class="program-price">Rp 500.000 <span>/ bulan</span></div>
+              <a href="pendaftaran.html?program=coding" class="btn btn-primary">Daftar</a>
+            </div>
+          </article>
+
+          <article class="program-card" id="b-indo">
+            <div class="program-card-header">
+              <div class="program-icon" aria-hidden="true">📚</div>
+              <div>
+                <h3>Bahasa Indonesia</h3>
+                <p class="program-level">SD · SMP · SMA</p>
+              </div>
+            </div>
+            <div class="program-card-body">
+              <p class="program-desc">Tingkatkan literasi dan kemampuan menulis. Tata bahasa, menulis esai, memahami bacaan, dan persiapan ujian nasional.</p>
+              <ul class="program-features">
+                <li>Tata bahasa & ejaan EYD</li>
+                <li>Menulis esai & karya ilmiah</li>
+                <li>Analisis teks & sastra</li>
+                <li>Persiapan UN Bahasa Indonesia</li>
+                <li>Latihan soal AKM Literasi</li>
+              </ul>
+            </div>
+            <div class="program-card-footer">
+              <div class="program-price">Rp 300.000 <span>/ bulan</span></div>
+              <a href="pendaftaran.html?program=bahasa-indonesia" class="btn btn-primary">Daftar</a>
+            </div>
+          </article>
+
+          <article class="program-card" id="utbk">
+            <div class="program-card-header">
+              <div class="program-icon" aria-hidden="true">🎯</div>
+              <div>
+                <h3>Persiapan UTBK</h3>
+                <p class="program-level">SMA Kelas XII · Alumni</p>
+              </div>
+            </div>
+            <div class="program-card-body">
+              <p class="program-desc">Paket intensif 4 bulan untuk menghadapi UTBK/SNBT. Tryout mingguan, pembahasan mendalam, dan strategi menjawab soal yang efektif.</p>
+              <ul class="program-features">
+                <li>TPS: penalaran umum & kuantitatif</li>
+                <li>Literasi Bahasa Indonesia & Inggris</li>
+                <li>Penalaran Matematika</li>
+                <li>Tryout online setiap Minggu</li>
+                <li>Konsultasi pilihan jurusan PTN</li>
+              </ul>
+            </div>
+            <div class="program-card-footer">
+              <div class="program-price">Rp 750.000 <span>/ bulan</span></div>
+              <a href="pendaftaran.html?program=utbk" class="btn btn-primary">Daftar</a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="price-table-section" aria-labelledby="jadwal-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Jadwal & Tarif</span>
+          <h2 id="jadwal-heading">Jadwal Kelas & Daftar Harga</h2>
+          <p>Transparansi harga adalah komitmen kami. Semua biaya sudah termasuk modul belajar dan tryout bulanan.</p>
+        </div>
+
+        <div class="table-wrapper">
+          <table class="price-table" aria-describedby="tabel-catatan">
+            <caption>Daftar harga dan jadwal kelas BimbelCerdas – Tahun Ajaran 2026/2027</caption>
+            <thead>
+              <tr>
+                <th scope="col">Program</th>
+                <th scope="col">Jenjang</th>
+                <th scope="col">Jadwal</th>
+                <th scope="col">Durasi</th>
+                <th scope="col">Kapasitas</th>
+                <th scope="col">Harga / Bulan</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Matematika <span class="badge-popular">Populer</span></td>
+                <td>SD / SMP / SMA</td>
+                <td>Sen, Rab, Jum</td>
+                <td>90 menit</td>
+                <td>10 siswa</td>
+                <td><strong>Rp 350.000</strong></td>
+              </tr>
+              <tr>
+                <td>Bahasa Inggris</td>
+                <td>SD / SMP / SMA</td>
+                <td>Sel, Kam, Sab</td>
+                <td>90 menit</td>
+                <td>10 siswa</td>
+                <td><strong>Rp 400.000</strong></td>
+              </tr>
+              <tr>
+                <td>IPA / Sains</td>
+                <td>SMP / SMA</td>
+                <td>Sen, Rab, Jum</td>
+                <td>120 menit</td>
+                <td>8 siswa</td>
+                <td><strong>Rp 450.000</strong></td>
+              </tr>
+              <tr>
+                <td>Pemrograman <span class="badge-new">Baru</span></td>
+                <td>SD / SMP / SMA</td>
+                <td>Sab, Min</td>
+                <td>120 menit</td>
+                <td>8 siswa</td>
+                <td><strong>Rp 500.000</strong></td>
+              </tr>
+              <tr>
+                <td>Bahasa Indonesia</td>
+                <td>SD / SMP / SMA</td>
+                <td>Sel, Kam</td>
+                <td>90 menit</td>
+                <td>12 siswa</td>
+                <td><strong>Rp 300.000</strong></td>
+              </tr>
+              <tr>
+                <td>Persiapan UTBK <span class="badge-popular">Populer</span></td>
+                <td>SMA Kelas XII / Alumni</td>
+                <td>Sen – Jum</td>
+                <td>150 menit</td>
+                <td>15 siswa</td>
+                <td><strong>Rp 750.000</strong></td>
+              </tr>
+              <tr>
+                <td>Paket Lengkap (3 mapel)</td>
+                <td>SMP / SMA</td>
+                <td>Fleksibel</td>
+                <td>Sesuai program</td>
+                <td>—</td>
+                <td><strong>Rp 950.000</strong></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p id="tabel-catatan" style="margin-top:1rem;font-size:0.85rem;color:var(--color-text-muted);">
+          * Harga sudah termasuk modul, tryout bulanan, dan laporan perkembangan mingguan. Tidak termasuk biaya pendaftaran awal (Rp 50.000, sekali bayar).
+        </p>
+      </div>
+    </section>
+
+    <section aria-labelledby="pengajar-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Tim Pengajar</span>
+          <h2 id="pengajar-heading">Pengajar Berpengalaman</h2>
+          <p>Semua pengajar kami berpendidikan minimal S1, berpengalaman mengajar, dan telah lulus seleksi ketat.</p>
+        </div>
+
+        <!-- Bootstrap card grid (E2) -->
+        <div class="row g-3">
+          <div class="col-6 col-md-4 col-lg-3">
+            <article class="teacher-card h-100">
+              <span class="teacher-avatar" aria-hidden="true">👨‍🏫</span>
+              <h4>Bapak Andi Wijaya</h4>
+              <p>S1 Matematika UGM<br>8 tahun mengajar</p>
+            </article>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3">
+            <article class="teacher-card h-100">
+              <span class="teacher-avatar" aria-hidden="true">👩‍🏫</span>
+              <h4>Ibu Sarah Putri</h4>
+              <p>S1 Sastra Inggris UNAIR<br>TOEFL 580</p>
+            </article>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3">
+            <article class="teacher-card h-100">
+              <span class="teacher-avatar" aria-hidden="true">👨‍🔬</span>
+              <h4>Bapak Reza Firmansyah</h4>
+              <p>S1 Fisika ITS<br>Spesialis Fisika SMA</p>
+            </article>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3">
+            <article class="teacher-card h-100">
+              <span class="teacher-avatar" aria-hidden="true">👩‍💻</span>
+              <h4>Ibu Dita Rahmawati</h4>
+              <p>S1 Informatika ITATS<br>Web & Python Developer</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section style="background:var(--color-bg-alt);padding-block:var(--space-3xl);" aria-labelledby="galeri-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Suasana Belajar</span>
+          <h2 id="galeri-heading">Galeri Kegiatan</h2>
+        </div>
+
+        <div class="row g-3">
+          <div class="col-12 col-md-6 col-lg-4">
+            <figure>
+              <img
+                src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=600&q=80"
+                srcset="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=400&q=70 400w,
+                        https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=600&q=80 600w"
+                sizes="(max-width: 768px) 100vw, 33vw"
+                alt="Siswa-siswi berdiskusi kelompok di kelas BimbelCerdas"
+                width="600" height="400"
+                loading="lazy"
+                style="border-radius:var(--radius-md);width:100%;height:220px;object-fit:cover;"
+              >
+              <figcaption style="font-size:0.85rem;color:var(--color-text-muted);padding:var(--space-sm) 0;">
+                Sesi diskusi kelompok — kelas Matematika SMA
+              </figcaption>
+            </figure>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <figure>
+              <img
+                src="https://images.unsplash.com/photo-1546410531-bb4caa6b424d?w=600&q=80"
+                srcset="https://images.unsplash.com/photo-1546410531-bb4caa6b424d?w=400&q=70 400w,
+                        https://images.unsplash.com/photo-1546410531-bb4caa6b424d?w=600&q=80 600w"
+                sizes="(max-width: 768px) 100vw, 33vw"
+                alt="Pengajar menjelaskan materi di depan papan tulis"
+                width="600" height="400"
+                loading="lazy"
+                style="border-radius:var(--radius-md);width:100%;height:220px;object-fit:cover;"
+              >
+              <figcaption style="font-size:0.85rem;color:var(--color-text-muted);padding:var(--space-sm) 0;">
+                Pengajar profesional dengan pendekatan interaktif
+              </figcaption>
+            </figure>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <figure>
+              <img
+                src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=600&q=80"
+                srcset="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=400&q=70 400w,
+                        https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=600&q=80 600w"
+                sizes="(max-width: 768px) 100vw, 33vw"
+                alt="Siswa sedang belajar menggunakan laptop untuk kelas pemrograman"
+                width="600" height="400"
+                loading="lazy"
+                style="border-radius:var(--radius-md);width:100%;height:220px;object-fit:cover;"
+              >
+              <figcaption style="font-size:0.85rem;color:var(--color-text-muted);padding:var(--space-sm) 0;">
+                Kelas pemrograman Python — seru dan praktikal!
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+
+        <p style="font-size:0.8rem;color:var(--color-text-muted);margin-top:var(--space-md);">
+          Sumber foto: <a href="https://unsplash.com" target="_blank" rel="noopener">Unsplash</a> (lisensi bebas)
+        </p>
+      </div>
+    </section>
+
+    <section aria-labelledby="cta-katalog-heading">
+      <div class="container">
+        <div class="cta-section">
+          <h2 id="cta-katalog-heading">Tertarik dengan Program Kami?</h2>
+          <p>Daftar sekarang dan mulai belajar minggu ini. Tersedia sesi coba gratis selama 1 minggu!</p>
+          <div class="cta-actions">
+            <a href="pendaftaran.html" class="btn btn-white">Daftar Sekarang</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <strong>📚 BimbelCerdas</strong>
+          <p>Lembaga bimbingan belajar terpercaya sejak 2018. Kami berkomitmen mencetak generasi cerdas dan berkarakter.</p>
+        </div>
+        <nav class="footer-col" aria-label="Navigasi program">
+          <h4>Program</h4>
+          <ul>
+            <li><a href="#matematika">Matematika</a></li>
+            <li><a href="#bahasa-inggris">Bahasa Inggris</a></li>
+            <li><a href="#ipa">IPA / Sains</a></li>
+            <li><a href="#utbk">Persiapan UTBK</a></li>
+          </ul>
+        </nav>
+        <nav class="footer-col" aria-label="Navigasi halaman">
+          <h4>Navigasi</h4>
+          <ul>
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="katalog.html">Program & Harga</a></li>
+            <li><a href="pendaftaran.html">Pendaftaran</a></li>
+          </ul>
+        </nav>
+        <div class="footer-col">
+          <h4>Kontak</h4>
+          <ul>
+            <li><a href="tel:+6281234567890">📞 0812-3456-7890</a></li>
+            <li><a href="mailto:info@bimbelcerdas.id">✉️ info@bimbelcerdas.id</a></li>
+            <li><span>📍 Jl. Pendidikan No. 12, Surabaya</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 BimbelCerdas. Dibuat untuk UTS Pemrograman Antarmuka Web – Teknik Informatika ITATS.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
