@@ -155,10 +155,3 @@ BimbelCerdas/
 | Ikon emoji | Sistem (platform native) | — |
 
 ---
-
-## Pernyataan Penggunaan AI
-
-Alat AI yang digunakan dalam pengerjaan proyek ini:
-- **Claude (Anthropic)** – membantu struktur HTML semantik, pengecekan aksesibilitas ARIA, dan saran penyusunan custom property CSS.
-
-Seluruh kode diperiksa, dipahami, dan dapat dijelaskan oleh pengerjaan sendiri. Tidak ada bagian yang disalin langsung tanpa pemahaman.
